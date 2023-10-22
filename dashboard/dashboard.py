@@ -4,8 +4,8 @@ import numpy as np
 import joblib
 
 # Muat model yang telah Anda latih
-loaded_model = tf.keras.models.load_model("/my_model.h5")
-scaler = joblib.load("/scaler.pkl")
+loaded_model = tf.keras.models.load_model("dashboard/my_model.h5")
+scaler = joblib.load("dashboard/scaler.pkl")
 
 # Fungsi untuk melakukan prediksi
 def predict(model, input_data):
